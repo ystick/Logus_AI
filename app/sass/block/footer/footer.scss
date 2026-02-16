@@ -1,0 +1,45 @@
+footer {
+    background-color: $dark-bg-color;
+    color: #fff;
+    
+
+    .top_footer {
+        padding: 50px 0 30px 0;
+
+        .title {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            li {
+                a {
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .bottom_footer {
+        border-top: 1px solid hsla(0,0%,100%,.2);
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .copyright {
+            font-size: 10px;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    img {
+        &.logo-image {
+            width: 90px;
+            margin-top: 20px;
+        }
+    }
+}

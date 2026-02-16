@@ -1,0 +1,32 @@
+[
+    {
+        "image": "01.webp",
+        "title": "ICONIC STAYS",
+        "description": "An iconic luxury destination where Rooms, Suites, and Signature Penthouses blend sophisticated interiors with stunning views.",
+        "btn": ""
+    },
+    {
+        "image": "02.webp",
+        "title": "CULINARY MASTERY",
+        "description": "Experience Michelin-starred dining and culinary showstoppers with 17 world-renowned restaurants.",
+        "btn": ""
+    },
+    {
+        "image": "03.webp",
+        "title": "ICONIC NIGHTLIFE",
+        "description": "The end of the night is just the beginning. The place to be and be seen, this is where you lose yourself to next level entertainment.",
+        "btn": ""
+    },
+    {
+        "image": "04.webp",
+        "title": "TRANSFORMATIVE  WELLNESS",
+        "description": "A truly different holistic spa and wellbeing experience designed to cleanse the body, clear the mind, lift the emotions and stir the spirit.",
+        "btn": ""
+    },
+    {
+        "image": "05.webp",
+        "title": "INCREDIBLE ATTRACTIONS",
+        "description": "Unleash your adventurous spirit with record-breaking attractions and experiences at Aquaventure World.",
+        "btn": ""
+    }
+]

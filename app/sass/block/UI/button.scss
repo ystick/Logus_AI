@@ -1,0 +1,35 @@
+.s-btn {
+    padding: .75rem .9375rem;
+    
+    color: #001446;
+    height: auto;
+    background: #faf5eb;
+    border-color: transparent;
+    // font-family: Averta_Bold;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .03125rem;
+    min-width: 0;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+
+    transition: $transition;
+
+    min-width: 146px;
+
+    &.ml20 {
+        margin-left: .9375rem;
+    }
+
+    &.blue {
+        background-color: $dark-bg-color;
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: $light-bg-color_a;
+        color: #fff;
+        transition: $transition;
+    }
+}

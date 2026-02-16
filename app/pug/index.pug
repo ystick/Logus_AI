@@ -1,0 +1,14 @@
+extends layout/app
+    
+block page
+    include chunk/header
+
+    h1.title Главная
+
+    img(src="assets/template/img/5.jpg", alt="photo", width="500")
+
+    ul.news
+        each item in news 
+            li= item.title
+
+    include chunk/footer

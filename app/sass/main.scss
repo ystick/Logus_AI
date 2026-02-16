@@ -1,0 +1,117 @@
+$base-font-size: 22px;
+$light-bg-color: #FAF5EC;
+$light-bg-color_a: #d2b99b;
+$dark-bg-color: #001446;
+$text-color: #282828;
+
+$transition: ease-in-out .3s;
+
+@mixin ph {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+// .forum-regular {
+//   font-family: "Forum", serif;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+
+* {
+    box-sizing: border-box;
+    
+}
+
+ul {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &.undl {
+        position: relative;
+        cursor: pointer;
+        line-height: 1;
+        text-decoration: none;
+
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            margin-top: -7px;
+            width: 0;
+            height: 1px; 
+            background-color: $text-color;
+            content: "";
+            transition: width 0.3s ease-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &:focus:after {
+            width: 100%;
+        }
+    }
+
+    &.undlw {
+        &::after {
+            background-color: #fff;
+        }
+    }
+}
+
+h3 {
+    color: $dark-bg-color;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+span {
+    &.titleline {
+        width: 120px;
+        border-bottom: 1px solid rgba(0,20,70,.2);
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+header {
+    // background-color: $dark-bg-color;
+    color: #fff;
+}
+
+section {
+    padding: 60px 0;
+}
+
+@import "block/**/*.scss";

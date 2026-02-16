@@ -1,0 +1,38 @@
+.slider-ratata {
+    .slide-block {
+        width: 50%;
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &.is-selected {
+            // width: 800px;
+            margin: 0 auto;
+
+            img {
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            transform: scale(0.8);
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    .flickity-button.flickity-prev-next-button {
+        &.previous {
+            left: 7%;
+        }
+
+        &.next {
+            right: 7%;
+        }
+    }    
+}

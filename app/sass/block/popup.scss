@@ -1,0 +1,122 @@
+.stock_popup {
+    display: none;
+
+    &.open {
+        display: flex;
+    }
+
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .stock_popup-overlay {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .7;
+    }
+
+    .stock_popup-body {
+        position: absolute;
+        top: 50%;
+        margin-top: -175px;
+        left: 50%;
+        margin-left: -325px;
+        width: 650px;
+        height: 350px;
+        background-color: #ebebeb;
+        display: flex;
+
+        @media screen and (max-width: 575px) {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin-left: 0;
+            margin-top: 0;
+            flex-direction: column;
+
+            .l-block{
+                order: 2;
+            }
+            .r-block{
+                order: 1;
+                background-image: url(/wp-content/themes/ion/assets/modules/popup/img/IMG_1272.webp);
+                width: 100%;
+            }
+        }
+
+        .modalClose {
+            position: absolute;
+            // width: 15px;
+            // height: 15px;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            transform: rotate(45deg);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .l-block {
+            width: 400px;
+            height: 100%;
+            padding-top: 40px;
+            padding-left: 40px;
+
+            .lb-title {
+                color: #7d9fc2;
+                font-size: 22px;
+                font-weight: bold;
+
+                a {
+                    text-decoration: none;
+                    color: #7d9fc2;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+            }
+
+            .lb-text {
+                padding-top: 15px;
+                font-size: 18px;
+
+                span {
+                    font-size: 14px;
+                    opacity: .7;
+                }
+            }
+
+            .lb-address {
+                display: flex;
+                font-size: 12px;
+                padding-top: 40px;
+                padding-bottom: 10px;
+
+                div:nth-child(2n) {
+                    padding-left: 10px;
+                }
+            }
+
+            a.popup_btn {
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                background-color: #7d9fc2;
+                padding: 5px 15px;
+                border-radius: 7px;
+            }
+        }
+
+        .r-block {
+            background-image: url(/wp-content/themes/ion/assets/modules/popup/img/273461.webp);
+            width: 250px;
+            height: 100%;
+            background-size: cover;
+        }
+    }
+}

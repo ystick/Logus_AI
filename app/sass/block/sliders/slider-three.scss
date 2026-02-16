@@ -1,0 +1,37 @@
+.slider-atatat {
+    .slide-block {
+        width: calc(20% - 15px);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            padding-top: 10px;
+            height: 52px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            height: 84px;
+        }
+    }
+
+    .flickity-button.flickity-prev-next-button {
+        // position: absolute;
+
+        &.previous {
+            left: -70px;
+        }
+
+        &.next {
+            right: -70px;
+        }
+    }    
+}
