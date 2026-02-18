@@ -73,8 +73,11 @@ header {
         .slide {
             width: 100%;
             overflow: hidden;
+            z-index: -1;
             
             &.is-selected {
+                z-index: 0;
+                
                 .image_block {
                     img {
                         transform: scale(1);
