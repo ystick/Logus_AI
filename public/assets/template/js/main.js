@@ -45,7 +45,7 @@ eval("module.exports = () => {\r\n    window.addEventListener('scroll', function
   \*********************************/
 /***/ (function(module) {
 
-eval("module.exports = () => {\r\n    const searchBtn = document.querySelector('.ltbr_search');\r\n    const searchBlock = document.querySelector('.search');\r\n    const overlay = document.querySelector('.search-overlay')\r\n\r\n    searchBtn.addEventListener('click', e =>{\r\n        searchBlock.classList.add('active');\r\n    })\r\n\r\n    overlay.addEventListener('click', e => {\r\n        if(searchBlock.classList.contains('active')){\r\n            searchBlock.classList.remove('active')\r\n        }\r\n    })\r\n}\n\n//# sourceURL=webpack://gulp-starter/./app/js/module/search.js?");
+eval("module.exports = () => {\r\n    const searchBtn = document.querySelector('.ltbr_search');\r\n    const searchBlock = document.querySelector('.search');\r\n    const overlay = document.querySelector('.search-overlay');\r\n    const closeBtn = document.querySelector('.close-btn');\r\n    searchBtn.addEventListener('click', e =>{\r\n        searchBlock.classList.add('active');\r\n    })\r\n\r\n    overlay.addEventListener('click', e => {\r\n        if(searchBlock.classList.contains('active')){\r\n            searchBlock.classList.remove('active')\r\n        }\r\n    })\r\n\r\n    closeBtn.addEventListener('click', e => {\r\n        if(searchBlock.classList.contains('active')){\r\n            searchBlock.classList.remove('active')\r\n        }\r\n    })\r\n}\n\n//# sourceURL=webpack://gulp-starter/./app/js/module/search.js?");
 
 /***/ }),
 
