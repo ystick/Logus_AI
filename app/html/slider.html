@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
 
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+    <link rel="stylesheet" href="assets/template/libs/flickity/flickity.css">
+    <link rel="stylesheet" href="assets/template/libs/flickity/flickity_fade/flickity-fade.css">
 
     <style>
         /* #msGallery {
@@ -111,14 +112,6 @@
             background: #ED2;
         }
 
-
-
-
-
-
-
-
-
         @media (max-width: 580px) {
             .carousel-container {
                 width: 100%;
@@ -172,7 +165,6 @@
     <div class="carousel-container">
 
         <div class="carousel-nav">
-            <div class="carousel-cell is-nav-selected"><img src="assets/template/img/test/27cfb0b4411611f08be75254001182ee-f89ca770736011f0974e5254001182ee.0fce1b68dbc162b85450b928d3082c35.wepb" alt=""></div>
             <div class="carousel-cell"><img src="assets/template/img/test/elshariruch.jpg" alt=""></div>
             <div class="carousel-cell"><img src="assets/template/img/test/f-4.jpg" alt=""></div>
             <div class="carousel-cell"><img src="assets/template/img/test/ferma-slide-1.jpg" alt=""></div>
@@ -183,7 +175,6 @@
         </div>
 
         <div class="carousel carousel-main">
-            <div class="carousel-cell"><img src="assets/template/img/test/27cfb0b4411611f08be75254001182ee-f89ca770736011f0974e5254001182ee.0fce1b68dbc162b85450b928d3082c35.wepb" alt=""></div>
             <div class="carousel-cell"><img src="assets/template/img/test/elshariruch.jpg" alt=""></div>
             <div class="carousel-cell"><img src="assets/template/img/test/f-4.jpg" alt=""></div>
             <div class="carousel-cell"><img src="assets/template/img/test/ferma-slide-1.jpg" alt=""></div>
@@ -199,8 +190,10 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-<!-- <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> -->
+<!-- <script src="assets/template/libs/flickity/flickity.pkgd.js"></script>
+<script src="assets/template/libs/flickity/flickity_fade/flickity-fade.js"></script> -->
+<script src="assets/template/libs/flickity/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 
 <script>
     // external js: flickity.pkgd.js
@@ -210,7 +203,7 @@
         prevNextButtons: false,
         // lazyLoad: 1,
         // contain: true,
-        // //fade: true,
+        fade: true,
         cellAlign: 'left',
         // percentPosition: true,
         // adaptiveHeight: true,

@@ -8,9 +8,34 @@
         padding-left: 10px;
         padding-right: 10px;
 
+        .img-block {
+            position: relative;
+
+            .content-block {
+                display: none;
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                right: 30px;
+                padding: 50px;
+                background-color: rgba($color: #000, $alpha: .4);
+                color: #dadada;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+        }
+
         &.is-selected {
             // width: 800px;
             margin: 0 auto;
+
+            .img-block {
+                .content-block {
+                    display: block;
+                    opacity: 1;
+                    transition: all .3s ease-in-out;
+                }
+            }
 
             img {
                 transform: scale(1);
