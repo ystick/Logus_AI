@@ -1,0 +1,32 @@
+#rooms {
+    .item-room {
+        width: 100%;
+        padding: 30px;
+        // background-color: antiquewhite;
+
+        .img-block {
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .title-block {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .subtitle-block {
+            font-style: italic;
+        }
+
+        .description-block {
+            font-size: 16px;
+        }
+
+        .btns-block {
+
+        }
+    }
+}
